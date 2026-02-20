@@ -8,6 +8,7 @@ O dataset utilizado foi Airbnb_Open_Data.csv obtido do link "https://www.kaggle.
 
 Principais colunas:
 
+```
 Id: Identificação do anúncio.
 Name: Nome/título do anúncio.
 Host Id: Identificação do anfitrião.
@@ -16,6 +17,7 @@ Room Type: Tipo de quarto.
 Price: Valor de locação do imóvel.
 Number Of Reviews: Quantidade de avaliações.
 Review Rate Number: Nota média recebida.
+```
 
 ## Tecnologias
 
@@ -30,12 +32,14 @@ Review Rate Number: Nota média recebida.
 
 ## Estrutura do projeto
 
-airbnb_dataset
-|-- notebooks/          # Análizes e visualizações dos dados
-|-- outputs/            # Resultados e arquivos gerados
-|-- .gitignore          # Arquivos e pastas não incluídos no repositório
-|-- README.md           # Informações do projeto
-|-- requirementes.txt   # Dependências do projeto
+```
+airbnb_dataset/
+├── README.md                    # Informações do projeto
+├── notebooks/                   # Análizes e visualizações dos dados 
+│   └── airbnb_open_data.ipynb
+├── outputs/                     # Resultados e arquivos gerados  
+└── requirements.txt             # Dependências do projeto   
+```
 
 ## Como executar
 
