@@ -35,9 +35,9 @@ Review Rate Number: Nota média recebida.
 ```
 airbnb_dataset/
 ├── README.md                    # Informações do projeto
-├── notebooks/                   # Análizes e visualizações dos dados 
-│   └── airbnb_open_data.ipynb
-├── outputs/                     # Resultados e arquivos gerados  
+├── src/                         # Análizes e visualizações dos dados 
+│   ├── airbnb_cleaner.py        # Biblioteca responsável pelo tratamento dos dados
+│   └── airbnb_open_data.ipynb   # Notebook contendo visualizações e insights
 └── requirements.txt             # Dependências do projeto   
 ```
 
