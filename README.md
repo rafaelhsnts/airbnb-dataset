@@ -28,17 +28,26 @@ Review Rate Number: Nota média recebida.
 * python 3.12.3
 * pywafle 1.1.1
 * seaborn 0.13.2
+* streamlit 1.54.0
 * wordcloud 1.9.4
 
 ## Estrutura do projeto
 
 ```
 airbnb_dataset/
-├── README.md                    # Informações do projeto
-├── src/                         # Análizes e visualizações dos dados 
-│   ├── airbnb_cleaner.py        # Biblioteca responsável pelo tratamento dos dados
-│   └── airbnb_open_data.ipynb   # Notebook contendo visualizações e insights
-└── requirements.txt             # Dependências do projeto   
+├── README.md                      # Informações do projeto
+├── app
+│   ├── __init__.py
+│   └── airbnb_streamlit_app.py    # Aplicativo streamlit com análises simplificadas
+├── notebook
+│   └── airbnb_open_data.ipynb     # Notebook contendo visualizações e insights
+├── requirements.txt               # Dependências do projeto
+└── src
+    ├── __init__.py
+    ├── airbnb_cleaner.py          # Biblioteca responsável pelo tratamento dos dados
+    └── data
+        └── raw
+            └── airbnb_raw.csv     # Dataset bruto do projeto
 ```
 
 ## Como executar
