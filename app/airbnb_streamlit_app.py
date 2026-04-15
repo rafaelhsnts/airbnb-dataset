@@ -227,30 +227,35 @@ elif page == "Visualização":
     df, _ = clean_data(df, verbose=False)
     st.header("Visualizações", text_alignment="center")
     st.markdown("<br>", unsafe_allow_html=True)
-
     st.markdown("<br>", unsafe_allow_html=True)
+    col1, col2, col3 = st.columns([1,2,1])
 
     graph = st.sidebar.radio("**Análise**", ["Correlação", "Análise de outliers", "Distribuição por região", "Preço por tipo de quarto", "Avaliação por região", "Distribuição geográfica"])
 
     if graph == "Correlação":
         fig = create_corr(df)
-        st.pyplot(fig)
+        with col2:
+            st.pyplot(fig)
         plt.close(fig)
     elif graph == "Análise de outliers":
         fig = create_boxgraph(df)
-        st.pyplot(fig)
+        with col2:
+            st.pyplot(fig)
         plt.close(fig)
     elif graph == "Distribuição por região":
         fig = create_neiggroupgraph(df)
-        st.pyplot(fig)
+        with col2:
+            st.pyplot(fig)
         plt.close(fig)
     elif graph == "Preço por tipo de quarto":
         fig = create_priceroom(df)
-        st.pyplot(fig)
+        with col2:
+            st.pyplot(fig)
         plt.close(fig)
     elif graph == "Avaliação por região":
         fig = create_pywaffle(df)
-        st.pyplot(fig)
+        with col2:
+            st.pyplot(fig)
         plt.close(fig)
     elif graph == "Distribuição geográfica":
         create_worldmap(df)
